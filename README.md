@@ -15,7 +15,7 @@ I wrote this code for my use. Not for your use. Most of this was written while I
 
 # Projects not included in this repo
 ### [overwatch-ocr](https://github.com/zkxjzmswkwl/overwatch-ocr)
-Images screen and outputs dictoinaries for each time, containing key/value pairs of what hero each player is on.
+Images screen and outputs dictoinaries for each team, containing key/value pairs of what hero each player is on.
 
 Eventually this turned into a contracted project for a team, thus public pushes stopped.
 
