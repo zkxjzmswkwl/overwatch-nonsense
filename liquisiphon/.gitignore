@@ -1,0 +1,3 @@
+*.swp # vim files
+*.pyc # python bytecode
+__pycache__/ # python's obnoxious cache folder
