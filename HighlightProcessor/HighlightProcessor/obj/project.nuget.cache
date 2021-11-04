@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "6qfLUcNLQMKFxfMvaU5uB47Gi3M/vLSIGbyeQ5CbY7Z35PGDheMx2mMjBQL0H86MASq6hClZ5hjgTXRuq34r3Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\workc\\source\\repos\\HighlightProcessor\\HighlightProcessor\\HighlightProcessor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\workc\\.nuget\\packages\\ffmpegcore\\4.6.0\\ffmpegcore.4.6.0.nupkg.sha512",
+    "C:\\Users\\workc\\.nuget\\packages\\instances\\1.6.0\\instances.1.6.0.nupkg.sha512",
+    "C:\\Users\\workc\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\workc\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\workc\\.nuget\\packages\\system.drawing.common\\5.0.2\\system.drawing.common.5.0.2.nupkg.sha512",
+    "C:\\Users\\workc\\.nuget\\packages\\system.text.json\\5.0.1\\system.text.json.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
