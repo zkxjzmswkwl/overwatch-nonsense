@@ -13,4 +13,9 @@ Start -> `00:00:05`
 
 End   -> `00:00:16`
 
+# REQUIRES FFMPEG TO BE IN THE SAME DIRECTORY.
+Requires ffmpeg executable files to either be in your path, or in the same directory.
+
+Ffmpeg download is available [here](https://ffmpeg.org/download.html#build-windows)
+
 A download of this is available [here](https://mega.nz/file/E9sU1ZDK#AdS9iIAQEcXCHA6mP6DNLjE-Sn8ghCxHDGkoIpfdLyY)
