@@ -13,5 +13,4 @@ Start -> `00:00:05`
 
 End   -> `00:00:16`
 
-# REQUIRES FFMPEG TO BE IN THE SAME DIRECTORY.
 A download of this is available [here](https://mega.nz/file/I0NxySYK#cM5yU3p4l5Ryb_nz1KRBkaxHqwPHo1g1wsRbzF5AObQ)
