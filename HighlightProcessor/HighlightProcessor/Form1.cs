@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -58,6 +59,30 @@ namespace HighlightProcessor
                 .ProcessSynchronously();
 
             MessageBox.Show(h.Output, "Job's done.", MessageBoxButtons.OK);
+        }
+
+        private void ProcessGif(Highlight h)
+        {
+            // I'm lazy. Not restructuring shit to change extensions. Just replacing it where I need to.
+            h.Output = h.Output.Replace("mp4", "gif");
+
+            if (File.Exists(h.Output))
+                File.Delete(h.Output);
+
+            string FfmpegParams = String.Format("-ss {0} -t {1} -i \"{2}\" -r 50 \"{3}\"", h.Start, h.Delta, h.Input, h.Output);
+
+
+            Process ffmpegProc = new Process();
+            ffmpegProc.StartInfo.FileName = "ffmpeg";
+            ffmpegProc.StartInfo.Arguments = FfmpegParams;
+            ffmpegProc.StartInfo.UseShellExecute = true;
+            ffmpegProc.StartInfo.RedirectStandardOutput = false;
+            ffmpegProc.Start();
+            ffmpegProc.WaitForExit();
+
+            File.WriteAllText("params.txt", FfmpegParams);
+
+            MessageBox.Show("Job done.");
         }
 
         private Highlight FetchTimes()
@@ -137,6 +162,15 @@ namespace HighlightProcessor
         {
             textBox3.Text = "00:00:05";
             textBox4.Text = "00:00:25";
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ProcessGif(FetchTimes());
+        }
+        private void button6_Click(object sender, EventArgs e)
+        {
+            ProcessGif(FetchTimes());
         }
     }
 }
