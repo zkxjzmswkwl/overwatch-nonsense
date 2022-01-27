@@ -29,6 +29,12 @@ namespace HighlightProcessor
             InitializeComponent();
         }
 
+        private void ConcatenateClips(string output, string firstClip, string secondClip)
+        {
+            FFMpeg.Join(output, firstClip, secondClip);
+            MessageBox.Show("Job done.");
+        }
+
         private void ProcessInput(Highlight h)
         {
             //-------------------------------------------------------------------------
@@ -171,6 +177,12 @@ namespace HighlightProcessor
         private void button6_Click(object sender, EventArgs e)
         {
             ProcessGif(FetchTimes());
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.Show();
         }
     }
 }
