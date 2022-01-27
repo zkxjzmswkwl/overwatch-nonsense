@@ -144,7 +144,7 @@ namespace HighlightProcessor
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Author: Carter\nDate: May 2018\nRevision Date: Nov. 2021", "About", MessageBoxButtons.OK); 
+            MessageBox.Show("Author: Carter\nDate: May 2018\nRevision Date: Jan. 2022", "About", MessageBoxButtons.OK); 
         }
 
         private void button4_Click(object sender, EventArgs e)

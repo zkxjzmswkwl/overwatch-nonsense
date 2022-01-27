@@ -116,7 +116,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(213, 23);
             this.button2.TabIndex = 20;
-            this.button2.Text = "gg";
+            this.button2.Text = "Go";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
